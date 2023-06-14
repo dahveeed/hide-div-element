@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David's ICT Productions</title>
+    <link rel="stylesheet" href ="my-ict-productions-website.css">
+	<style>
+	#myDiv {
+	width: 75%;
+	padding: 25px 10px;
+	text-align: center;
+	background-color: orange;
+	margin-top: 20px;
+	}
+	</style>
+</head>
+
+<body>
+<div id="message">
+     <button type="button" onClick="addMessage();"> Motivating Comment </button>
+<script>
+  function addMessage() {
+  document.getElementById('message').innerText = 'You should get 100% no problem!';
+  }
+</script>
+
+</div>
+
+     <button type="button" onClick="clearDiv();"> clear </button>
+	 
+<div id="myDiv">
+<p>
+	This is in a paragraph tag.
+</p>
+</div>
+
+<script>
+function clearDiv() {
+  var x = document.getElementById("myDivs");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
